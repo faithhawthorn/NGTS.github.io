@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+
+    <title>ngtransits.org</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+  </head>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body><center>
+<table id="maincontainer">
+
+<tr>
+ <td id="logo">
+   <img src="ngts_logo.png">
+ </td>
+</tr>
+
+<tr>
+ <td id="menubar"><table><tr>
+     <td><a href="index.shtml">About NGTS</a></td>
+     <td><a href="science.shtml">Science</a></td>
+     <td><a href="survey.shtml">Survey</a></td>
+     <td><a href="telescopes.shtml">Telescopes</a></td>
+     <td><a href="prototype.shtml">Prototype</a></td>
+     <td><a href="partners.shtml">Partners</a></td>
+ </tr></table></td>
+</tr>
+<tr>
+ <td id="maincontent">
+
+
+<h1>About NGTS</h1>
+<div class="leftimage" style="width: 480px;">
+<img src="eso1502a.jpg">
+<div class="imgcaption">
+The NGTS telescopes operating at ESO Paranal, Chile (Credit: ESO/ G. Lambert)
+</div>
+</div>
+
+The Next-Generation Transit Survey (NGTS) is a wide-field photometric
+survey designed to discover transiting exoplanets of 
+Neptune-size and smaller around bright stars (magnitude V<13).<P>
+
+NGTS employs an array of fully-robotic small telescopes operating in
+the 600-900nm band, thereby maximizing sensitivity to bright but
+relatively small and cool host stars (K and early-M spectral type).<P>
+
+<!--Detailed simulations demonstrate that NGTS will survey a target sample more than five times
+%larger than <a href="http://kepler.arc.nasa.gov/">Kepler</a> in this magnitude
+                                                           range.  -->
+NGTS will survey brighter stars than
+                                                           NASA's <a href="http://kepler.arc.nasa.gov/">Kepler</a>
+                                                                mission, and
+                                                                will
+                                                                therefore find
+the brightest exoplanets of Neptune and super-Earth size, providing
+the prime targets for characterization by telescopes such as
+                                                           the <a href="http://www.eso.org/public/teles-instr/vlt/">VLT</a>,
+                                                           <a href="http://www.eso.org/public/teles-instr/e-elt/">E-ELT</a>
+                                                           and <a href="http://www.jwst.nasa.gov/">JWST</a>.  Bright
+targets provide the key to understanding planetary structure and
+evolution, as well as atmospheric composition.
+<P>
+
+NGTS is sited at the <a href ="http://www.eso.org/public/">European Southern Observatory's</a> Paranal Observatory in Chile, home of the <a
+href="http://www.eso.org/public/teles-instr/vlt/">VLT</a>, which meets strict requirements for low 
+water vapor and excellent photometric conditions.  This is the first telescope project hosted,
+but not operated, by ESO on Paranal, and strengthens the synergy with ESO's telescopes. 
+Our science requirement of 0.1% photometric 
+precision across a wide field is technically demanding, and so we have 
+demonstrated all key technologies using a prototype system, which operated on La 
+Palma during 2009 and 2010, and at the Observatoire de Geneve from 2012-14.<P>
+
+NGTS also benefits from hardware and software heritage from the <a href="http://www.superwasp.org/">SuperWASP</a>
+project, which since 2004 has been the world's leading in the discovery of
+transiting exoplanets of Jupiter size.
+<P>
+
+The NGTS data will flow into the ESO archive system and will be
+available to astronomers worldwide for decades to come.
+
+<P><b> First light at
+   Paranal! <a href="http://www.eso.org/public/news/eso1502/"> ESO Press
+   Release</a></b> including some fantastic pictures, videos and
+   an<a href="http://www.eso.org/public/videos/eso1502a/"> ESO Podcast</a>. 
+
+<P><b> Follow NGTS on twitter <a href="https://twitter.com/NextGenTransits">@NextGenTransits</a></b></P> 
+
+</td></tr>
+<tr>
+ <td id="pagemaint">
+
+ </td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+
