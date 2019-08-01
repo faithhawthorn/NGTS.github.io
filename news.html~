@@ -27,9 +27,9 @@
 
 <h1>About NGTS</h1>
 <div class="leftimage" style="width: 480px;">
-<img src="ngts_scopes.jpg">
+<img src="eso1502a.jpg">
 <div class="imgcaption">
-The NGTS telescopes at the ESO Paranal Observatory in Chile. The ESO Very Large Telescope can be seen in the background. (Credit: G. Lambert)
+The NGTS telescopes operating at ESO Paranal, Chile (Credit: ESO/ G. Lambert)
 </div>
 </div>
 
@@ -75,23 +75,14 @@ transiting exoplanets of Jupiter size.
 The NGTS data will flow into the ESO archive system and will be
 available to astronomers worldwide for decades to come.
 
-
-    <h2>Latest News</h2>
+<P><b> First light at
+    Paranal! <a href="http://www.eso.org/public/news/eso1502/"> ESO Press
+    Release</a></b> including some fantastic pictures, videos and
+    an<a href="http://www.eso.org/public/videos/eso1502a/"> ESO Podcast</a>. 
 
 <P><b> Follow NGTS on twitter <a href="https://twitter.com/NextGenTransits">@NextGenTransits</a></b></P> 
 
-
-<table id="maincontent" style="margin-left:100px;margin-right:100px;text-align:left;">
-  <tr>
-  <td style="vertical-align:middle">    
-<b>Jun 2019: NGTS-7Ab is an ultra-short period transiting brown dwarf.</b> The orbital period is only 16 hours, and the stars are so close that the brown dwarf has tidally spun-up its young M dwarf host star. Magnetic braking should be decaying the orbit, meaning the stars are likely to merge within a few million years. <a href="https://arxiv.org/abs/1906.08219">Read the full paper on arXiv</a>.
-</td>  
-  <td>    
-  <img style="width:300px; margin-right:0px; margin-left:20px; vertical-align:middle" src="ngts7_phase_fold.png" /> 
-  </td>
-  </tr>
-</table>
-
+</td></tr>
 <tr>
   <td id="pagemaint">
 
