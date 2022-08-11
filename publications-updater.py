@@ -11,6 +11,7 @@
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
+import subprocess
 
 import os
 import ads
@@ -29,7 +30,14 @@ newpubs = '\n'
 for paper in papers:
     newpubs += '    <li style="margin-bottom:8px">\n'
     newpubs += '        <a href="https://ui.adsabs.harvard.edu/abs/{}/abstract">{} et al.</a>,\n'.format(paper.bibcode, paper.first_author)
-    newpubs += '        {}, {}, {}, {}<br>\n'.format(paper.year, paper.pub, paper.volume, paper.page[0])
+    if paper.volume and paper.page:
+       newpubs += '        {}, {}, {}, {}<br>\n'.format(paper.year, paper.pub, paper.volume, paper.page[0])
+    elif paper.volume:
+       newpubs += '        {}, {}, {}<br>\n'.format(paper.year, paper.pub, paper.volume)
+    elif paper.page:
+       newpubs += '        {}, {}, {}<br>\n'.format(paper.year, paper.pub, paper.page[0])
+    else:
+       newpubs += '        {}, {}<br>\n'.format(paper.year, paper.pub)
     newpubs += '        <i>{}</i>\n'.format(paper.title[0])
     newpubs += '    </li>\n\n'
 
@@ -47,7 +55,7 @@ if len(newpubs) > 5000:
     diff = 1
     if os.path.exists(oldpubs_filename):
         ## print('{} exists'.format(oldpubs_filename))
-        diff = os.system("diff {} {} | wc -l".format(oldpubs_filename, newpubs_filename))
+        diff = subprocess.check_output("diff {} {} | wc -l".format(oldpubs_filename, newpubs_filename), shell=True)
         ## print('Difference: {}'.format(diff))
     if diff:
         ## print('There has been an update.')
