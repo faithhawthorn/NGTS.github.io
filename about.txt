@@ -1,0 +1,10 @@
+The Next-Generation Transit Survey (NGTS) is a wide-field photometric survey designed primarily to find and characterise transiting exoplanets.
+NGTS employs an array of small fully-robotic telescopes operating at red-optical wavelengths (520-890nm) thereby maximizing sensitivity to bright but relatively cool and small host stars (K and early-M spectral type). The project is described in detail by Wheatley et al (2018).
+
+We routinely achieve photometric precison of 150 parts per million (ppm), which is unprecedented for a wide-field ground-based facility. This high precision has enabled the discovery of exoplanets as small as 3 Earth radii (e.g. NGTS-4b; West et al, 2019).
+
+NGTS is sited at the Paranal Observatory, which is the premier site of the European Southern Observatory (ESO) in the Atacama Desert in the north of Chile. Paranal is also home to ESO's Very Large Telescope (VLT). The site meets strict requirements for low water vapor and excellent photometric conditions. NGTS was the first external project granted access to the Paranal site, reflecting strong synergy with ESO telescopes that can be used to detailed characterisation of exoplanets studied with NGTS. NGTS also carries out observations in support of the ESO Very Large Telescope (VLT).
+
+NGTS data are made publicly available through the ESO Data Archive.
+
+We also welcome enquiries from potential collaborators interested in joining the NGTS consortium. In the first instance, please contact the principle investigator: Peter Wheatley (University of Warwick).
