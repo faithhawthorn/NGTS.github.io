@@ -1,11 +1,153 @@
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h1 class="w3-center">FOR SCIENTISTS</h1>
-  <p class="w3-center"> 
-    The NGTS telescopes are modified versions of 200mm (8 inch), f/2.8 high-quality commercial telescopes made by Astro Systeme Austria (ASA). Twelve of these telescopes are mounted individually on equatorial forks supplied by OMI. Each telesocpe has a field of view of 8 square degrees; working in unison, the total field of view is 96 square degrees.
-    <br>
-    <img src="/images/NGTS/ngts_telescopes.jpg" style="width:40%" ALIGN=right> <br>
-    <br>
-    The NGTS cameras are modified ikon-L cameras by Andor Technology Ltd built around red-sensitive deep-depletion CCDs by e2v. These large format (2k×2k) detectors designed to observe with optimal sensitivity in the 600 to 900nm range, in order to match the peak emission of the primary targets (K and early M stars). The 13.5 micron pixels give a resolution of 4.97 arcsecs/pixel. All the cameras have undergone an extensive regime of testing and characterisation in the laboratory at the Space Research Centre at the University of Leicester, in close partnership with Andor.
-  </p>
-</div>  
+<div class="w3-container w3-white" style="padding:0px 29px">
+  <p class="w3-jumbo w3-hide-big w3-center"> FOR SCIENTISTS </p>
+  <hr style="border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:black;
+  height: 1px;">
+
+  <div class="w3-third" style="padding:1%">
+    <p class="w3-large">THE OBSERVATORY</p>
+    <hr style="border: 0;
+    clear:both;
+    display:block;
+    width: 50%;               
+    background-color:black;
+    height: 1px;">
+    <img src="/images/NGTS/eso1502c.jpg" alt="John" style="width:90%">
+    <p class="w3-normal w3-center">
+The selected site for the observatory is 900 m downhill from the VISTA telescope at an altitude of 2440m. A pre-existing dirt 
+road links the NGTS facility to the rest of the ESO Paranal observatory. The NGTS enclosure sits on a concrete pad measuring 
+15x15m. The twelve telescope piers are cast into the inner section of the pad and are isolated from the surrounding concrete 
+in order to minimise transmission of vibration. The telescope enclosure measures 15x7m and was supplied by GR PRO7. It 
+consists of a metallic support structure that is surrounded by a fibreglass composite material. The roof is split into two 
+halves that move apart along the North-South direction. The roof panels are driven by a chain mechanism, which can be 
+operated under battery power in the event of a power cut, and the roof can also be closed manually. The facility has a further 
+two buildings; a converted shipping container control building that contains two server racks and office space; and a smaller 
+transformer building that connects NGTS to the power grid at Paranal.
+<br><br>
+Overarching control of the observatory is by our own software control system, Sentinel, which monitors the global status of the 
+facility (weather, network, mains power etc) and provides the final go/no-go decision to open the roof and begin observations. 
+Sentinel continues to monitor global status during the night and automatically ceases observations and closes the roof when 
+necessary. The roof is controlled via a Programmable Logic Controller (PLC) made by Beckhoff that communicates with Sentinel 
+via the modbus TCP protocol. The PLC automatically closes the roof if communication with Sentinel is lost.
+<br><br>
+The twelve individual telescopes are controlled by separate instances of our own telescope control system, Paladin, which is 
+responsible for the control of the camera, focuser and mount. When allowed by Sentinel, the Paladins collect observing jobs 
+from the operations database and act independently of each other. Sentinel and each of the twelve 
+Paladins run on rack-mounted Linux servers situated in the control building.
+<br><br>
+NGTS is equipped with a variety of sensors to ensure safe robotic operation. These include redundant mechanical and proximity 
+sensors that detect the roof status. A Vaisala WXT520 weather station that monitors temperature, pressure, wind, humidity and 
+rain is installed on the roof of the control building, along with an AAG Cloudwatcher sky temperature probe. The Cloudwatcher 
+also contains a light sensor and an additional rain sensor. As the detection of rain is always post-facto - and the NGTS roof 
+takes approximately two minutes to close - we have chosen to install multiple sensors around the facility to permit the earliest 
+detection of the first rain drops. This includes an additional bank of sixteen 5x3cm rain sensors on the roof of the control 
+building that are connected to a Raspberry Pi, and a further rain sensor connected directly to the PLC inside the telescope 
+enclosure (bringing the total to 19). A Dylos dust sensor is installed in a weatherproof box outside on the East wall of the 
+telescope enclosure.
+<br><br>
+A monochromatic Alcor OMEA all-sky camera is installed on the control building roof and permits the early detection of 
+incoming clouds. We have also installed eight AXIS network cameras to monitor the facility, including three low-light level 
+cameras that allow us to monitor the status of the telescopes and the enclosure roof even in dark sky conditions. Network 
+microphones have also been installed to provide additional remote monitoring of the roof mechanism.
+<br><br>
+Equipment in the telescope enclosure is connected to servers in the control building via a multicore fibre bundle (a distance 
+of ≥ 20m). A pair of fibres in the bundle also provides the network connection to ancillary devices in the telescope enclosure 
+(webcams, network addressable power distribution units, PLC etc). The fibre connection is converted to USB 2.0 at each end 
+using a pair of Icron Ranger USB-to-fibre converters.
+      </p>
+  </div>
+
+
+  <div class="w3-third" style="padding:1%">
+    <p class="w3-large">THE TELESCOPES</p>
+    <hr style="border: 0;
+    clear:both;
+    display:block;
+    width: 50%;               
+    background-color:black;
+    height: 1px;">
+    <img src="/images/NGTS/ngts_telescopes.jpg" alt="John" style="width:90%">
+    <p class="w3-normal  w3-center">
+      The NGTS telescopes are each mounted on an equatorial fork mount made by Optical Mechanics Inc.,5 
+      allowing them to be independently pointed and guided. The mounts are arranged in two rows of six telescopes 
+      running side by side along the East-West direction. The intertelescope spacing was chosen such 
+      that no telescope can intercept the field of view of any other telescope for elevations above 30◦.
+      <br><br>
+      The mounts are made from anodised aluminium and are fitted with a custom declination axis ring that interfaces with a 
+      matching ring surrounding the telescope tube. The two axes are fitted with zero-backlash friction drives and their 
+      orientation is sensed with optical encoders. The axes are operated as a closed loop servo-actuated system in order to 
+      optimise the response to wind and other environmental noise. The specification for the blind pointing accuracy of the 
+      mounts is 15 arcsec, with relative pointing to better than 0.5 arcsec over a distance of 1.5 degrees. The maximum slew velocity 
+      is in excess of 10 degrees per second.
+      <br><br>
+      Each telescope is polar aligned using the drift method and by making fine adjustments to the altitude and azimuth of the 
+      telescope baseplate. A pair of micrometers is used to enable repeatable adjustments at the 10μm level. Precise polar 
+      alignment is important in order minimise the motion of stars through the night due to field rotation, which cannot be 
+      corrected by autoguiding. A telescope pointing model is generated using a grid of 900 pointings, spaced evenly in 
+      altitude and azimuth, enabling pointing accuracy of ≤ 2 pixels over the observable sky. The alignment of the telescope 
+      is quantified by analysing the pointing model data with TPoint6 and our design requirement is to maintain alignment to 
+      within 30 arcsec of the celestial pole in order to keep field rotation below 1 pixel at the edge of the field. In practice 
+      we align the mounts to 5 arcsec from the celestial pole. As Chile is seismically active, we plan periodic checks of the alignment of 
+      each mount.
+      <br><br>
+      The low level mount control uses Clear Sky Institute Motion Controller (CSIMC) cards on the right ascension and declination 
+      axes. CSIMC cards are usually operated with the Talon Observatory Control System, which is capable of controlling a complete 
+      observatory, but is not designed for a system with multiple telescopes in one building. We have therefore replaced large 
+      sections of Talon with custom software to provide global control of NGTS. A thin layer of Talon remains, essentially as an 
+      Application Programming Interface (API) between our custom software and the CSIMC cards. We have also made our own modifications 
+      to the CSIMC firmware in order to enable continuous tracking and guiding on our fields for long periods.
+      <br><br>
+      The mounts were supplied with limit switches that inform the CSIMC cards and hence our control software when an axis goes out 
+      of safe limits, but we have also fitted our own fail-safe system that cuts the power to a mount if either axis goes beyond hard 
+      limits. This security system can only be reset manually.
+    </p>
+  </div>
+
+
+  <div class="w3-third" style="padding:1%">
+    <p class="w3-large">THE CAMERAS</p>
+    <hr style="border: 0;
+    clear:both;
+    display:block;
+    width: 50%;               
+    background-color:black;
+    height: 1px;">
+    <img src="/images/NGTS/qe_camera.jpeg" alt="John" style="width:90%">
+    <p class="w3-normal  w3-center"> 
+      Each of the twelve NGTS telescopes is fitted with a 2048x2048 pixel CCD manufactured by e2v technologies plc3. 
+      These are the deep depletion version of the CCD42-40 back-illuminated CCD sensor, which provides excellent quantum 
+      efficiency in the red optical with minimal fringing. The quantum efficiency is included 
+      in the calculation of total throughput available as an online data file. The device has 13.5 μm pixels and an image 
+      area of 27.6x27.6 mm. The deep depletion version has higher dark current than the standard device, because it employs 
+      non-inverted mode operation (NIMO), however the dark current is negligible in our application since it remains much lower
+      than the sky background.
+       <br><br>
+      The CCDs are packaged into cameras by Andor Technology Ltd4. The camera is a custom version of the Andor iKon-L 936 
+      camera, which is an updated version of the cameras used for the WASP project (Pollacco et al. 2006). The NGTS cameras 
+      have a 4-stage thermo-electric cooler, allowing us to operate at a CCD temperature of -70◦C for all ambient conditions 
+      at Paranal. The cameras have a custom CCD window, which is optimised for 500-950 nm, and a custom shutter with an 
+      aperture of 45mm in order to accommodate the fast f/2.8 beam from the telescope (this shutter is now fitted to the 
+      iKon-L as standard). The cameras also have a custom faceplate designed to interface with the telescope focuser unit, 
+      with an O-ring to prevent dust ingress. The CCDs are aligned to the focal plane of the telescope to a precision of 0.04 degrees
+      in an iterative process in which focus gradients in sky images are eliminated by adding and removing shims on the mounting 
+      bolts. We read the CCDs at a speed of 3 MHz, reading out an entire image in 1.5 s with a read noise of around 12 electrons. 
+      We have the option to reduce read noise by reading the CCDs at 1 MHz, but at the cost of longer readout time (4.5 s) and 
+      reduced on-sky exposure time.
+      <br><br>
+      We have worked in collaboration with Andor to make a number of modifications to the standard camera with the goal of 
+      optimising photometric precision. These modifications have included changes to the analogue readout electronics to 
+      maximise bias and gain stability, optimisation of the collection phase CCD voltage to maximise charge conservation 
+      for saturated stars, and control of the internal cooling fan for thermal stability.
+      <br><br>
+      Communication with the camera is via a USB connection, which is carried to our data acquisition computers over optical 
+      fibre. The power supply is external to the camera and provides stabilised voltages via a shielded cable. 
+      The power supply has been mounted on one of the forks of the telescope mount in order to minimise mechanical stress on 
+      the cable. Images with a prototype telescope unit suffered pick up noise originating in the telescope mount power supply,
+       and this was eliminated by additional cross bonding of all components.
+    </p>
+  </div>
+
+</div>

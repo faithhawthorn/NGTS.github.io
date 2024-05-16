@@ -9,13 +9,15 @@
 <script> 
 $(function(){
   $("#header").load("/pages/templates/header.html"); 
-  $("#footer").load("/pages/tabs/media_content.html"); 
+  $("#content").load("/pages/tabs/media_content.html"); 
+  $("#footer").load("/pages/templates/footer.html"); 
+
 });
 </script> 
 </head>
 <body>
 <div id="header"></div>
-<!--Remaining section-->
+<div id="content"></div>
 <div id="footer"></div>
 </body>
 </html>

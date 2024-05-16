@@ -9,8 +9,8 @@
 #     (https://ui.adsabs.harvard.edu/public-libraries/DPYuIo9uQN6-4suzkS0Xug)
 
 import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+#reload(sys)
+#sys.setdefaultencoding('utf8')
 import subprocess
 
 import os
@@ -19,7 +19,7 @@ ads.config.token = 'secret token'
 
 
 # Change to the correct directory
-os.chdir('/home/dra/git/NGTS.github.io/pages/tabs')
+os.chdir('/Users/sam/Software/NGTS.github.io/pages/tabs')
 
 # Generate a new publications list
 fields = ["author", "first_author", "bibcode", "id", "year", "title", "pub", "volume", "page", "bibcode"]
