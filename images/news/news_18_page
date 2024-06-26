@@ -1,0 +1,22 @@
+<html>
+<head>
+<title></title>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("/pages/templates/header.html"); 
+  $("#news").load("/pages/news/news_18.html"); 
+  $("#footer").load("/pages/templates/footer.html"); 
+});
+</script> 
+</head>
+<body>
+<div id="header"></div>
+<div id="news"></div>
+<div id="footer"></div>
+</body>
+</html>
