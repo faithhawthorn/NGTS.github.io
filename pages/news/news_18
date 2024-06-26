@@ -1,0 +1,19 @@
+<div class="w3-container w3-white" style="padding:0px 29px">
+    <p class="w3-jumbo w3-hide-big w3-center">  NGTS discovers ‘dipper’ stars in Orion </p>
+    <hr style="border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:black;
+    height: 1px;">
+    <p class="w3-center"> 
+        <b>May 2023: ‘Dippers’ are a new class of variable star that show large drops in brightness of up to 50%,
+        lasting anywhere from a few hours to a few days. NGTS has led a search of these dipper stars in the Orion
+        Complex using machine learning methods, identifying 120 new dippers - the largest number to be identified 
+        in a single cluster to date. The team also determined that around 28 per cent of stars with disks are dipper 
+        stars, and all of the dippers in the sample were found to have disks themselves. 
+        Read the <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.1700M/abstract">full journal article</a>. 
+    <figure class="w3-center">
+        <img src="/images/news/news_18.jpg" alt="news_18"  width="50%" /> 
+    </figure>
+  </div>  
